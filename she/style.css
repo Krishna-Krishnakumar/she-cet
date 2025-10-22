@@ -1,0 +1,355 @@
+/* --- Bubblegum Bliss Palette --- */
+:root {
+    --color-primary: #FFA5D6;    /* Deep Pink */
+    --color-secondary: #A7ABDE;  /* Purple/Blue */
+    --color-light-pink: #FFD6EE; /* Light Pink */
+    --color-mauve: #ECD2E0;      /* Mauve */
+    --color-light-blue: #CED1F8; /* Light Blue/Lavender */
+    --color-off-white: #FFF0F1;  /* Off-White */
+    --color-dark-text: #333;
+    --color-light-text: #fff;
+}
+
+/* --- Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-dark-text);
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--color-off-white);
+    padding: 15px 0;
+    border-bottom: 2px solid var(--color-light-pink);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.logo img {
+    height: 40px; /* Placeholder size */
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: var(--color-dark-text);
+    font-weight: 700;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* --- Buttons/CTAs --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f77dce; /* Darker primary */
+}
+
+.secondary-btn {
+    background-color: var(--color-secondary);
+}
+
+.secondary-btn:hover {
+    background-color: #8c90cc; /* Darker secondary */
+}
+
+/* --- Home Page Sections --- */
+.hero {
+    color: var(--color-light-text);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.mission {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.mission h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+}
+
+.motto-box {
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    border: 3px solid;
+}
+
+.motto {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: var(--color-secondary);
+    margin-bottom: 5px;
+}
+
+.featured-activities {
+    padding: 60px 0;
+}
+
+.featured-activities h3 {
+    text-align: center;
+    color: var(--color-secondary);
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.activity-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border-top: 5px solid var(--color-primary);
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-card h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.activity-card .learn-more {
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.activity-card .learn-more:hover {
+    text-decoration: underline;
+}
+
+/* --- Programs Page Specific --- */
+.programs-page {
+    padding: 50px 0;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.programs-page > p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    background-color: var(--color-off-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.program-card h3 {
+    color: var(--color-dark-text);
+    margin-bottom: 10px;
+}
+
+.program-card .details {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+/* --- Program Detail Pages (Generic Styles) --- */
+.program-detail {
+    padding: 50px 0;
+}
+
+.program-detail h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.program-detail .key-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-light-blue);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    color: var(--color-dark-text);
+}
+
+.info-box {
+    text-align: center;
+}
+
+.info-box span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.overview, .objectives-section {
+    margin-bottom: 40px;
+    background-color: var(--color-off-white);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.overview h2, .objectives-section h2 {
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--color-light-pink);
+    padding-bottom: 5px;
+}
+
+.objectives-list {
+    list-style: none;
+}
+
+.objectives-list li {
+    background: url('star_bullet.svg') no-repeat left 5px; /* Placeholder for a custom bullet */
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--color-dark-text);
+    color: var(--color-light-text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simple mobile nav hiding for this basic example */
+    }
+    
+    header .container {
+        justify-content: center;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero h2 {
+        font-size: 1.2em;
+    }
+    
+    .activity-grid, .program-grid, .gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .key-info {
+        flex-direction: column;
+    }
+    
+    .info-box {
+        margin-bottom: 15px;
+    }
+}

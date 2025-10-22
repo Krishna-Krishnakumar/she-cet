@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execom - SHE@CET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="logo_placeholder.png" alt="SHE@CET Logo">
+                <p>SHE@CET</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="execom.html">Execom</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container execom-page">
+        <h1 class="page-title" style="color: #A7ABDE;">SHE@CET Executive Committee 2023-24</h1>
+        <p class="subtitle">Guiding the mission of empowerment and skill development at CET.</p>
+
+        <section class="execom-grid">
+
+            <div class="member-card" style="border-top: 5px solid #FFA5D6;">
+                <img src="placeholder_faculty.jpg" alt="Faculty Coordinator Placeholder" class="member-photo">
+                <h3 style="color: #A7ABDE;">Dr. Placeholder Name</h3>
+                <p class="role">Faculty Coordinator</p>
+                <p class="dept">Department of Electrical Engineering</p>
+            </div>
+
+            <div class="member-card" style="border-top: 5px solid #CED1F8;">
+                <img src="placeholder_student_lead.jpg" alt="Student Lead Placeholder" class="member-photo">
+                <h3 style="color: #A7ABDE;">Ms. Placeholder A</h3>
+                <p class="role">Student Lead</p>
+                <p class="dept">B.Tech, Computer Science (S8)</p>
+            </div>
+
+            <div class="member-card" style="border-top: 5px solid #FFA5D6;">
+                <img src="placeholder_secretary.jpg" alt="Secretary Placeholder" class="member-photo">
+                <h3 style="color: #A7ABDE;">Ms. Placeholder B</h3>
+                <p class="role">Secretary</p>
+                <p class="dept">B.Tech, Electronics & Comm. (S6)</p>
+            </div>
+            
+            <div class="member-card" style="border-top: 5px solid #CED1F8;">
+                <img src="placeholder_treasurer.jpg" alt="Treasurer Placeholder" class="member-photo">
+                <h3 style="color: #A7ABDE;">Ms. Placeholder C</h3>
+                <p class="role">Treasurer</p>
+                <p class="dept">B.Tech, Civil Engineering (S4)</p>
+            </div>
+
+            <div class="member-card" style="border-top: 5px solid #FFA5D6;">
+                <img src="placeholder_pr.jpg" alt="PR/Outreach Placeholder" class="member-photo">
+                <h3 style="color: #A7ABDE;">Ms. Placeholder D</h3>
+                <p class="role">PR & Outreach</p>
+                <p class="dept">B.Arch (S6)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SHE@CET, College of Engineering Trivandrum.</p>
+        </div>
+    </footer>
+
+    <style>
+        .execom-page {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .execom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .member-card {
+            background-color: var(--color-off-white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid var(--color-primary); /* Use a strong accent color */
+        }
+
+        .member-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .member-card .role {
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 5px;
+        }
+
+        .member-card .dept {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .member-photo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</body>
